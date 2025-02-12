@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0A0F1F;
+    color: #E0E0E0;
+}
+
+header {
+    background-color: #1B1F38;
+    color: #4DD0E1; /* Soft cyan */
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #4DD0E1; /* Name color */
+    font-size: 2.5em;
+}
+
+header p {
+    color: #B39DDB; /* Muted purple */
+    font-size: 1.2em;
+}
+
+nav a {
+    color: #D1C4E9; /* Soft gray for links */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00E5FF; /* Bright neon on hover */
+}
+
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: #1B1F38;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #A259FF;
+}
+
+.project {
+    border-left: 4px solid #A259FF;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 2rem;
+}
+
+.social-links a {
+    color: #A259FF;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #00E5FF;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1B1F38;
+    color: #E0E0E0;
+}

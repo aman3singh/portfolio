@@ -69,45 +69,11 @@ h2 {
     font-size: 1.1em;
     line-height: 1.6;
 }
-#resume-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #0A0F1F; /* Match with your theme */
-    padding-bottom: 0; /* Ensures no extra padding */
-    overflow: hidden; /* Prevents extra scrolling */
-}
-
-#resume-container iframe {
-    width: 80%;
-    height: 100vh; /* Make it take full viewport height */
-    border: none;
-    background-color: transparent;
-}
 
 .project {
     border-left: 4px solid #A259FF;
     padding-left: 10px;
     margin-bottom: 15px;
-}
-.project-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 1.1em;
-    font-weight: bold;
-    color: white;
-    background: linear-gradient(45deg, #A259FF, #00C2FF);
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.project-btn:hover {
-    transform: scale(1.05);
-    background: linear-gradient(45deg, #00C2FF, #A259FF);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 .social-links {
@@ -124,22 +90,6 @@ h2 {
 
 .social-links a:hover {
     color: #00E5FF;
-}
-.credential-button {
-    color: #E0E0E0;
-    text-decoration: none;
-    background-color: #A259FF;
-    padding: 10px 18px;
-    border-radius: 8px;
-    font-size: 1em;
-    transition: background-color 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.credential-button:hover {
-    background-color: #00E5FF;
 }
 
 footer {
