@@ -4,6 +4,8 @@ body {
     padding: 0;
     background-color: #0A0F1F;
     color: #E0E0E0;
+    
+   
 }
 
 header {
@@ -20,15 +22,32 @@ nav {
 }
 
 nav a {
-    color: #A259FF;
+    color: #A259FF !important;
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s;
 }
 
-nav a:hover {
-    color: #00E5FF;
+nav a:visited {
+    color: #A259FF !important;  /* Force visited links to be same as normal links */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
 }
+
+nav a:active {
+    color: #A259FF !important;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+nav a:hover {
+    color: #00E5FF !important; /* Hover color */
+}
+
 
 section {
     padding: 20px;
@@ -139,12 +158,55 @@ h2 {
 }
 
 .credential-button:hover {
-    background-color: #00E5FF;
+    background: linear-gradient(to right, #6C9EFF, #A259FF);
+    color: white;
+    transform: scale(1.05); /* Slight zoom */
+    box-shadow: 0px 0px 15px rgba(162, 89, 255, 0.5); /* Glow effect */
 }
 
+.contact-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    color: #6C9EFF;
+    border: 2px solid;
+    
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border-image: linear-gradient(to right, #6C9EFF, #A259FF) 1;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect: Gradient Fill + Glow */
+.contact-button:hover {
+    background: linear-gradient(to right, #6C9EFF, #A259FF);
+    color: white;
+    transform: scale(1.05); /* Slight zoom */
+    box-shadow: 0px 0px 15px rgba(162, 89, 255, 0.5); /* Glow effect */
+}
+
+.main-content {
+    flex: 1; /* Pushes footer to the bottom */
+}
+
+*:focus {
+    outline: none !important;
+}
+a:focus, button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+
 footer {
-    text-align: center;
+    margin-top: auto; /* Push footer to the bottom */
     padding: 10px;
+    text-align: center;
     background-color: #1B1F38;
     color: #E0E0E0;
 }
