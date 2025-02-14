@@ -192,10 +192,13 @@ h2 {
 .main-content {
     flex: 1; /* Pushes footer to the bottom */
 }
-
+* {
+    -webkit-tap-highlight-color: transparent !important;
+}
 *:focus {
     outline: none !important;
     box-shadow: none !important;
+    -webkit-tap-highlight-color: transparent !important;
 }
 a:focus, button:focus {
     outline: none !important;
@@ -205,6 +208,18 @@ a:focus, button:focus {
 div:focus {
     outline: none !important;
 }
+*::before,
+*::after {
+    background: transparent !important;
+    box-shadow: none !important;
+    animation: none !important;
+}
+*:focus,
+*:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 
 
 footer {
