@@ -1,0 +1,26 @@
+# Ignore VS Code history files
+.history/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore compiled or temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Ignore Node.js dependencies (if applicable)
+node_modules/
+
+# Ignore Python virtual environment (if applicable)
+venv/
+__pycache__/
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore any backup files
+*~
+
