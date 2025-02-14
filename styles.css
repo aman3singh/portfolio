@@ -195,11 +195,15 @@ h2 {
 
 *:focus {
     outline: none !important;
+    box-shadow: none !important;
 }
 a:focus, button:focus {
     outline: none !important;
     box-shadow: none !important;
     background: transparent !important;
+}
+div:focus {
+    outline: none !important;
 }
 
 
