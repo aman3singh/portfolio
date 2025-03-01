@@ -12,7 +12,7 @@
     <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-    <header>
+    <header id="sticky-header">
         <h1>Aman Singh</h1>
         <p>Cybersecurity Graduate Student | Developer | Researcher</p>
         <nav>
@@ -30,6 +30,23 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Sticky header script - compact header on scroll with debounce
+            let isScrolling;
+            window.addEventListener('scroll', function() {
+                // Clear our timeout throughout the scroll
+                window.clearTimeout(isScrolling);
+                
+                const header = document.getElementById('sticky-header');
+                // Set a timeout to run after scrolling ends (20ms)
+                isScrolling = setTimeout(function() {
+                    // If we're more than 80px from the top, add the compact class
+                    if (window.scrollY > 80) {
+                        header.classList.add('compact-header');
+                    } else {
+                        header.classList.remove('compact-header');
+                    }
+                }, 20);
+            });
             // Get all nav links
             const navLinks = document.querySelectorAll('.nav-link');
             
@@ -148,9 +165,9 @@
                 `,
                 'portfolio': `
                     <section class="projects">
-                        <h2>📚 Projects</h2>
+                        <h2>📚 My Projects</h2>
                         <div class="project">
-                            <h2>API Honeypot for OpenStack</h2>
+                            <h3>API Honeypot for OpenStack</h3>
                             <p><strong>Jan 2025 - Present</strong></p>
                             <p>Developing a machine learning-based API honeypot for OpenStack to detect, classify, and mitigate API-based attacks in private cloud environments.</p>
                             <p>Integrating Splunk for advanced logging, OpenStack and Kolla Ansible for private IaaS cloud setup, and Kubernetes for scalability and orchestration.</p>
@@ -158,7 +175,7 @@
                         </div>
 
                         <div class="project">
-                            <h2>Search Engine</h2>
+                            <h3>Search Engine</h3>
                             <p><strong>Sep 2024 - Dec 2024</strong></p>
                             <p>Developed a high-performance Python-based search engine optimized for fast and accurate information retrieval.</p>
                             <p>Implemented a trie-based indexing system, allowing efficient prefix-based lookups and reducing search complexity to O(k).</p>
@@ -168,7 +185,7 @@
                         </div>
                         
                         <div class="project">
-                            <h2>SYN Flood Attack Simulation & Mitigation</h2>
+                            <h3>SYN Flood Attack Simulation & Mitigation</h3>
                             <p><strong>Jan 2024 - May 2024</strong></p>
                             <p>Designed and implemented a SYN Flood Attack Simulation to evaluate the impact of Denial-of-Service (DoS) attacks on network performance and security.</p>
                             <p>Utilized Python and Scapy to generate and send large volumes of spoofed SYN packets, mimicking real-world attack scenarios against test environments.</p>
@@ -177,7 +194,7 @@
                         </div>        
 
                         <div class="project">
-                            <h2>Social Media Intelligence</h2>
+                            <h3>Social Media Intelligence</h3>
                             <p><strong>Aug 2019 - Feb 2020</strong></p>
                             <p>Led a team of four in collecting six months of data from YouTube, Twitter, and Google Trends to extract and analyze social media trends.</p>
                             <p>Developed an AI-driven system using Support Vector Machine (SVM) models to predict social media trends and their durations.</p>
@@ -186,7 +203,7 @@
                         </div>
 
                         <div class="project">
-                            <h2>Ride Eazzy - Android Application</h2>
+                            <h3>Ride Eazzy - Android Application</h3>
                             <p><strong>Sep 2018 - Nov 2018</strong></p>
                             <p>Designed a smart bus ticketing application enabling real-time QR code validation for intra-city public transport.</p>
                             <p>Implemented Firebase Authentication for secure multi-factor login, ensuring enhanced security.</p>
@@ -217,22 +234,36 @@
                 `
             };
             
-            // Function to load page content
+            // Function to load page content with transition
             function loadPage(pageName) {
                 const contentDiv = document.getElementById('content');
-                contentDiv.innerHTML = pages[pageName] || pages['about'];
                 
-                // Update active class
-                navLinks.forEach(link => {
-                    if (link.getAttribute('data-page') === pageName) {
-                        link.classList.add('active');
-                    } else {
-                        link.classList.remove('active');
-                    }
-                });
+                // Add fade-out class
+                contentDiv.style.opacity = '0';
+                contentDiv.style.transform = 'translateY(20px)';
                 
-                // Scroll to top
-                window.scrollTo(0, 0);
+                // After a short delay, update content and fade back in
+                setTimeout(() => {
+                    contentDiv.innerHTML = pages[pageName] || pages['about'];
+                    
+                    // Update active class
+                    navLinks.forEach(link => {
+                        if (link.getAttribute('data-page') === pageName) {
+                            link.classList.add('active');
+                        } else {
+                            link.classList.remove('active');
+                        }
+                    });
+                    
+                    // Fade back in
+                    setTimeout(() => {
+                        contentDiv.style.opacity = '1';
+                        contentDiv.style.transform = 'translateY(0)';
+                    }, 50);
+                    
+                    // Scroll to top
+                    window.scrollTo(0, 0);
+                }, 300);
             }
             
             // Add click event listeners to navigation links
