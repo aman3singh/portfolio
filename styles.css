@@ -308,3 +308,106 @@ div:focus {
     outline: none !important;
     box-shadow: none !important;
 }
+
+/* Add these styles to your existing CSS */
+
+/* Skills grid layout */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #1B1F38;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #232845;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    height: 120px;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(145deg, #232845, #2A3154);
+}
+
+.skill-filter {
+    background: #1B1F38;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.skill-filter:hover {
+    background: linear-gradient(45deg, #A259FF, #00C2FF) !important;
+    transform: translateY(-2px);
+}
+
+.skill-filter.active {
+    background: linear-gradient(45deg, #A259FF, #00C2FF) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+    
+    .skill-filter {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        gap: 15px;
+    }
+    
+    .skill-item {
+        padding: 15px;
+        height: 100px;
+    }
+    
+    .skill-item i, 
+    .skill-item span:first-child {
+        font-size: 40px !important;
+    }
+}
+
+.flex-col:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(145deg, #232845, #2A3154);
+}
+
+/* For Kubernetes icon */
+.fa-dharmachakra {
+    transform: rotate(45deg);
+}
+
+div[style*="width: 160px; height: 160px;"] {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+div[style*="width: 160px; height: 160px;"]:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(145deg, #1B1F38, #2A3154);
+    border: 1px solid rgba(162, 89, 255, 0.2);
+}
