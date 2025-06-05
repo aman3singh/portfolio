@@ -24,3 +24,4 @@ __pycache__/
 # Ignore any backup files
 *~
 
+.history/

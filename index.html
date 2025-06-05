@@ -77,7 +77,7 @@
                                 📧 <a href="mailto:aman3singh.work@gmail.com" style="color: #E0E0E0; text-decoration: none;">aman3singh.work@gmail.com</a>
                             </div>
                             <div style="background-color: #1B1F38; padding: 15px 25px; border-radius: 12px; font-size: 1.1em; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);">
-                                📄 <a href="https://drive.google.com/file/d/1Nz0MeAt1uBZwZ25w2qv_pvAtI1VztiaV/view?usp=sharing" 
+                                📄 <a href="https://drive.google.com/file/d/1hBga3FC6z7Rf7wC4GjwkcP2pzWPLvGn3/view?usp=sharing" 
                                     target="_blank" 
                                     rel="noopener noreferrer" 
                                     style="color: #E0E0E0; text-decoration: none;">
@@ -219,10 +219,10 @@
                                 <p style="font-size: 16px; font-weight: 500; margin-top: 5px; color: #E0E0E0; text-align: center;">PostMan</p>
                             </div>
 
-                            <!-- RedHat -->
+                            <!-- Ansible -->
                             <div style="width: 160px; height: 160px; background-color: #1B1F38; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-                                <img src="redhat_logo.png" alt="Red Hat" style="height: 60px; width: auto; margin-bottom: 10px;">
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 5px; color: #E0E0E0; text-align: center;">Red Hat</p>
+                                <img src="Ansible.webp" alt="Ansible" style="height: 60px; width: auto; margin-bottom: 10px;">
+                                <p style="font-size: 16px; font-weight: 500; margin-top: 5px; color: #E0E0E0; text-align: center;">Ansible</p>
                             </div>
                         </div>
 
@@ -304,11 +304,23 @@
                     <section class="projects">
                         <h2>📚 My Projects</h2>
                         <div class="project">
-                            <h3>API Honeypot for OpenStack</h3>
-                            <p><strong>Jan 2025 - Present</strong></p>
-                            <p>Developing a machine learning-based API honeypot for OpenStack to detect, classify, and mitigate API-based attacks in private cloud environments.</p>
-                            <p>Integrating Splunk for advanced logging, OpenStack and Kolla Ansible for private IaaS cloud setup, and Kubernetes for scalability and orchestration.</p>
-                            <p>Enhancing proactive security by identifying attack patterns and automating threat response mechanisms.</p>
+                            <h3>Securing OpenStack based private IaaS Cloud environment With API Gateway and Honeypot</h3>
+                            <p><strong>Jan 2025 - May 2025</strong></p>
+                            <p>Deployed a production-grade private IaaS cloud using OpenStack Zed and Kolla Ansible across multi-node Rocky Linux VMs. This cloud infrastructure was designed to host GPU-enabled ML workloads for internal research.</p>
+                            <p>Automated deployment of core OpenStack services like Nova, Keystone, Neutron, Glance, Horizon using containerized Kolla Ansible scripts.</p>
+                            <p>Configured GPU passthrough on the compute node to support ML instances requested by students via the Horizon dashboard.</p>
+                            <p>Established secure API access to the cloud environment by making use of NGNIX-based API gateway and authentication through Neutron and Keystone.</p>
+                            <a href="https://drive.google.com/file/d/16U6obM_EHeMD-sVNO-befWX-imsTCJpt/view?usp=sharing" target="_blank" class="project-btn">🚀 View Project Report</a>
+                        </div>
+
+                        <div class="project">
+                            <h3>API Gateway with Honeypot Integration</h3>
+                            <p><strong>Jan 2025 - March 2025</strong></p>
+                            <p>Designed a layered defense system combining an intelligent NGINX API Gateway and a Flask-based Honeypot to protect OpenStack services from API-level attacks.</p>
+                            <p>Routed and filtered API requests at the gateway layer, redirecting suspicious traffic to the honeypot.</p>
+                            <p>Developed attacker profiling using session tracking, fake token generation, and behavior analysis, storing all of these data in Redis database.
+                            <p>Built a containerized logging system in Docker using Grafana, Loki, and Promtail for real-time attack visualization.</p>
+                            <a href="https://github.com/aman3singh/API_Gateway-with-Honeypot-using-Ngnix-and-Docker.git" target="_blank" class="project-btn">🚀 View Project</a>
                         </div>
 
                         <div class="project">
