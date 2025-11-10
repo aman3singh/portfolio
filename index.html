@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Aman Singh | Cybersecurity Portfolio</title>
+        <title>Aman Singh</title>
         <link rel="stylesheet" href="styles.css" />
         <link
             rel="stylesheet"
@@ -34,7 +34,7 @@
             <p>Cybersecurity Professional | Developer | Researcher</p>
             <nav>
                 <a href="#" data-page="about" class="nav-link">About</a>
-                <a href="#" data-page="portfolio" class="nav-link">Hire Me</a>
+                <a href="#" data-page="hireme" class="nav-link">Hire Me</a>
                 <a
                     href="https://drive.google.com/file/d/1hBga3FC6z7Rf7wC4GjwkcP2pzWPLvGn3/view?usp=sharing"
                     target="_blank"
@@ -42,7 +42,7 @@
                     style="color: #e0e0e0; text-decoration: none"
                     >Resume</a
                 >
-                <a href="#" data-page="skills" class="nav-link">Skills</a>
+                <a href="#" data-page="portfolio" class="nav-link">Portfolio</a>
             </nav>
 
             <!-- Social Icons -->
@@ -113,13 +113,13 @@
                                 A cybersecurity engineer and researcher, passionate about building secure, resilient and scalable systems. My research and development efforts focus on securing cloud-native architectures, automating security processes, and mitigating emerging threats through proactive cybersecurity strategies.
                             </p>
                             <p>
-                                Over the last few years, I’ve worked on everything from securing enterprise financial platforms at HSBC to research-driven project under <a href="https://scholar.google.com/citations?user=zchOfB4AAAAJ&hl=en" target="_blank" style="color: #A259FF;">Dr. Noor Ahmed</a>, where I built a multi-node private IaaS cloud using OpenStack. The focus of this work was securing the cloud environment against malicious API attacks by implementing an API gateway integrated with a honeypot that emulated OpenStack service endpoints.
+                                Over the last few years, I've worked on everything from securing enterprise financial platforms at HSBC to research-driven project under <a href="https://scholar.google.com/citations?user=zchOfB4AAAAJ&hl=en" target="_blank" style="color: #A259FF;">Dr. Noor Ahmed</a>, where I built a multi-node private IaaS cloud using OpenStack. The focus of this work was securing the cloud environment against malicious API attacks by implementing an API gateway integrated with a honeypot that emulated OpenStack service endpoints.
                             </p>
                             <p>
                                 At LearnQoch, a fast-growing EdTech startup, I worked on both detection and defense — automating Splunk alerts to speed up incident response and hardening Docker and Kubernetes environments with security best practices and vulnerability scanning.
                             </p>
                             <p>
-                                These days, I volunteer as a Site Reliability Engineer at the Asian Community Development Center, and when I’m not doing that, you’ll probably find me buried pwning TryHackMe or HackTheBox rooms.
+                                These days, I volunteer as a Site Reliability Engineer at the Asian Community Development Center, and when I'm not doing that, you'll probably find me buried pwning TryHackMe or HackTheBox rooms.
                             </p>
                             <p>
                                 <div style="text-align:center;">
@@ -169,213 +169,170 @@
                     </div>
 
                 `,
-                    skills: `
-                    <section id="skills" style="padding: 40px; text-align: center;">
-                        <h2 style="color: #A259FF; margin-bottom: 30px;">
-                            <i class="fas fa-wrench" style="margin-right: 10px;"></i>My Skills
-                        </h2>
+                    hireme: `
+                    <section class="projects">
+                        <h2 style="color: #E0E0E0; text-align: left; font-size: 3em; margin-bottom: 20px; font-weight: bold;">Hire Me!</h2>
+                        <p style="color: #A0A0A0; font-size: 1.2em; line-height: 1.6; margin-bottom: 30px; max-width: 700px;">
+                            If you are a recruiter or someone working at a company who has an opportunity for me that I cannot say no to! Then this page is for you.
+                        </p>
 
-                        <!-- Programming Languages Section -->
-                        <h3 style="color: #00E5FF; text-align: center; margin-bottom: 25px; margin-top: 40px; font-size: 1.8em;">Programming Languages</h3>
+                        <a href="https://drive.google.com/uc?export=download&id=1hBga3FC6z7Rf7wC4GjwkcP2pzWPLvGn3"
+                           target="_blank"
+                           class="download-resume-btn">
+                            <i class="fa-solid fa-download"></i>Download Resume
+                        </a>
 
-                        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; max-width: 900px; margin: 0 auto;">
+                        <h2 style="color: #E0E0E0; text-align: left; font-size: 1.8em; margin-top: 60px; margin-bottom: 10px; font-weight: normal;">My Tech Stack</h2>
+                        <p style="color: #A0A0A0; font-size: 0.95em; line-height: 1.6; margin-bottom: 40px;">
+                            Technologies that I use to get the job done.
+                        </p>
 
-                            <!-- Python -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <i class="fab fa-python" style="font-size: 60px; color: #306998;"></i>
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 15px; color: #E0E0E0; text-align: center;">Python</p>
-                            </div>
+                        <!-- Tech Stack Grid - 2x2 Layout -->
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; margin-bottom: 60px; max-width: 1400px;">
 
-                            <!-- Java -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <i class="fab fa-java" style="font-size: 60px; color: #f89820;"></i>
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 15px; color: #E0E0E0; text-align: center;">Java</p>
-                            </div>
-
-                            <!-- JavaScript -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <i class="fab fa-js-square" style="font-size: 60px; color: #F0DB4F;"></i>
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 15px; color: #E0E0E0; text-align: center;">JavaScript</p>
-                            </div>
-
-                            <!-- C -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <img src="img/C_Logo.png" alt="C" style="height: 60px; width: auto; margin-bottom: 10px;">
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 5px; color: #E0E0E0; text-align: center;">C</p>
-                            </div>
-
-                            <!-- Go -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <img src="img/go_logo.png" alt="Go" style="height: 60px; width: auto; margin-bottom: 10px;">
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 5px; color: #E0E0E0; text-align: center;">Go</p>
-                            </div>
-
-                            <!-- Lua -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <img src="img/lua_logo.png" alt="Lua" style="height: 60px; width: auto; margin-bottom: 10px;">
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 5px; color: #E0E0E0; text-align: center;">Lua</p>
-                            </div>
-
-                            <!-- PowerShell -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <img src="img/powershell_logo.webp" alt="PowerShell" style="height: 60px; width: auto; margin-bottom: 10px;">
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 5px; color: #E0E0E0; text-align: center;">PowerShell</p>
-                            </div>
-                        </div>
-
-                        <!-- Database Section -->
-                        <h3 style="color: #00E5FF; text-align: center; margin-bottom: 25px; margin-top: 40px; font-size: 1.8em;">Databases</h3>
-
-                        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; max-width: 900px; margin: 0 auto;">
-
-                            <!-- PostgreSQL -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <img src="img/PostgresSql.png" alt="PostgreSQL" style="height: 60px; width: auto; margin-bottom: 10px;">
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 5px; color: #E0E0E0; text-align: center;">PostgreSQL</p>
-                            </div>
-
-                            <!-- MySQL -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <img src="img/mysql_logo.png" alt="MySQL" style="height: 60px; width: auto; margin-bottom: 10px;">
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 5px; color: #E0E0E0; text-align: center;">MySQL</p>
-                            </div>
-
-                            <!-- MongoDB -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <img src="img/mongodb_logo.png" alt="MongoDB" style="height: 60px; width: auto; margin-bottom: 10px;">
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 5px; color: #E0E0E0; text-align: center;">MongoDB</p>
-                            </div>
-
-
-                        </div>
-
-
-
-                        <!-- Technologies Section -->
-                        <h3 style="color: #00E5FF; text-align: center; margin-bottom: 25px; margin-top: 40px; font-size: 1.8em;">Technologies</h3>
-
-                        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; max-width: 900px; margin: 0 auto;">
-
-                            <!-- AWS -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <i class="fab fa-aws" style="font-size: 60px; color: #FF9900;"></i>
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 15px; color: #E0E0E0; text-align: center;">AWS</p>
-                            </div>
-
-                            <!-- Docker -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <i class="fab fa-docker" style="font-size: 60px; color: #2496ED;"></i>
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 15px; color: #E0E0E0; text-align: center;">Docker</p>
-                            </div>
-
-                            <!-- Kubernetes -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <i class="fas fa-dharmachakra" style="font-size: 60px; color: #326CE5;"></i>
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 15px; color: #E0E0E0; text-align: center;">Kubernetes</p>
-                            </div>
-
-                            <!-- OpenStack -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <img src="img/openstack_logo.svg" alt="OpenStack" style="height: 60px; width: auto; margin-bottom: 10px;">
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 5px; color: #E0E0E0; text-align: center;">OpenStack</p>
-                            </div>
-
-                            <!-- Git -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <img src="img/git_logo.png" alt="Git" style="height: 60px; width: auto; margin-bottom: 10px;">
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 5px; color: #E0E0E0; text-align: center;">Git</p>
-                            </div>
-
-                            <!-- PostMan -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <img src="img/postman_logo.webp" alt="PostMan" style="height: 60px; width: auto; margin-bottom: 10px;">
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 5px; color: #E0E0E0; text-align: center;">PostMan</p>
-                            </div>
-
-                            <!-- Ansible -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <img src="img/Ansible.webp" alt="Ansible" style="height: 60px; width: auto; margin-bottom: 10px;">
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 5px; color: #E0E0E0; text-align: center;">Ansible</p>
-                            </div>
-                        </div>
-
-                        <!-- Security Tools Section -->
-                        <h3 style="color: #00E5FF; text-align: center; margin-bottom: 25px; margin-top: 40px; font-size: 1.8em;">Security Tools</h3>
-
-                        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; max-width: 900px; margin: 0 auto;">
-
-                            <!-- Nessus -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <i class="fas fa-shield-alt" style="font-size: 60px; color: #FFA500;"></i>
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 15px; color: #E0E0E0; text-align: center;">Nessus</p>
-                            </div>
-
-                            <!-- Splunk -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <img src="img/splunk_logo.png" alt="Splunk" style="height: 60px; width: auto; margin-bottom: 10px;">
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 5px; color: #E0E0E0; text-align: center;">Splunk</p>
-                            </div>
-
-                            <!-- Nmap -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <img src="img/nmap_logo.webp" alt="NMAP" style="height: 60px; width: auto; margin-bottom: 10px;">
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 5px; color: #E0E0E0; text-align: center;">Nmap</p>
-                            </div>
-
-                            <!-- BurpSuite -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <img src="img/burpsuite_logo.svg" alt="BurpSuite" style="height: 60px; width: auto; margin-bottom: 10px;">
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 5px; color: #E0E0E0; text-align: center;">Burp Suite</p>
-                            </div>
-
-                            <!-- Metasploit -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <img src="img/metasploit_logo.webp" alt="BurpSuite" style="height: 60px; width: auto; margin-bottom: 10px;">
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 5px; color: #E0E0E0; text-align: center;">Metasploit</p>
-                            </div>
-
-                            <!-- Wireshark -->
-                            <div style="width: 160px; height: 160px; background-color: transparent; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <img src="img/wireshark_logo.png" alt="BurpSuite" style="height: 60px; width: auto; margin-bottom: 10px;">
-                                <p style="font-size: 16px; font-weight: 500; margin-top: 5px; color: #E0E0E0; text-align: center;">Wireshark</p>
-                            </div>
-                        </div>
-
-
-                        <!-- Certifications section (keeping your existing section) -->
-                        <section id="certifications" style="padding: 40px 0; text-align: center;">
-                            <h2 style="color: #A259FF;">📜 Professional Certifications</h2>
-                            <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
-                                <div style="background-color: transparent; padding: 15px 25px; border-radius: 12px; font-size: 1.1em; width: 80%; display: flex; align-items: center; justify-content: space-between; box-shadow: none;">
-                                    <div style="display: flex; align-items: center; gap: 15px;">
-                                        <img src="img/microsoft_logo.svg" alt="Microsoft Logo" style="height: 40px;">
-                                        <b>Microsoft Certified: Azure Fundamentals</b>
-                                    </div>
-                                    <a href="https://learn.microsoft.com/en-us/users/amansingh-1923/credentials/2ef5697650f7d138?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" class="credential-button">Show Credential</a>
+                            <!-- Programming Languages Card -->
+                            <div style="background-color: rgba(27, 31, 56, 0.4); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 30px; transition: all 0.3s ease; min-height: 360px; display: flex; flex-direction: column;">
+                                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 25px;">
+                                    <i class="fas fa-code" style="font-size: 24px; color: #00E5FF;"></i>
+                                    <h3 style="color: #E0E0E0; font-size: 1.3em; margin: 0; font-weight: 600;">Programming Languages</h3>
                                 </div>
-
-                                <div style="background-color: transparent; padding: 15px 25px; border-radius: 12px; font-size: 1.1em; width: 80%; display: flex; align-items: center; justify-content: space-between; box-shadow: none;">
-                                    <div style="display: flex; align-items: center; gap: 15px;">
-                                        <img src="img/Docker_Logo.jpg" alt="Docker Logo" style="height: 40px;">
-                                        <b>Docker Foundations Professional Certificate</b>
+                                <div style="display: flex; flex-direction: column; gap: 18px; flex: 1;">
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <i class="fab fa-python" style="font-size: 24px; color: #306998;"></i>
+                                        <span style="color: #E0E0E0; font-size: 1em;">Python</span>
                                     </div>
-                                    <a href="https://www.linkedin.com/learning/certificates/b568a7f64d6cc6cd8276475222e3dbd3f80bb17eeea975fa4caa359c73702804?u=56742337" target="_blank" class="credential-button">Show Credential</a>
-                                </div>
-
-                                <div style="background-color: transparent; padding: 15px 25px; border-radius: 12px; font-size: 1.1em; width: 80%; display: flex; align-items: center; justify-content: space-between; box-shadow: none;">
-                                    <div style="display: flex; align-items: center; gap: 15px;">
-                                        <img src="img/isc2_logo.jpg" alt="ISC2 Logo" style="height: 40px;">
-                                        <b>ISC2 Candidate</b>
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <i class="fab fa-java" style="font-size: 24px; color: #f89820;"></i>
+                                        <span style="color: #E0E0E0; font-size: 1em;">Java</span>
                                     </div>
-                                    <a href="https://www.credly.com/badges/34d270c8-7299-4ed3-a625-0a13da7394b7/linked_in_profile" target="_blank" class="credential-button">Show Credential</a>
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <i class="fab fa-js-square" style="font-size: 24px; color: #F0DB4F;"></i>
+                                        <span style="color: #E0E0E0; font-size: 1em;">JavaScript</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <img src="img/C_Logo.png" alt="C" style="height: 24px; width: 24px; object-fit: contain;">
+                                        <span style="color: #E0E0E0; font-size: 1em;">C</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <img src="img/go_logo.png" alt="Go" style="height: 24px; width: 24px; object-fit: contain;">
+                                        <span style="color: #E0E0E0; font-size: 1em;">Go</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <img src="img/lua_logo.png" alt="Lua" style="height: 24px; width: 24px; object-fit: contain;">
+                                        <span style="color: #E0E0E0; font-size: 1em;">Lua</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <img src="img/powershell_logo.webp" alt="PowerShell" style="height: 24px; width: 24px; object-fit: contain;">
+                                        <span style="color: #E0E0E0; font-size: 1em;">PowerShell</span>
+                                    </div>
                                 </div>
                             </div>
-                        </section>
+
+                            <!-- Databases Card -->
+                            <div style="background-color: rgba(27, 31, 56, 0.4); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 30px; transition: all 0.3s ease; min-height: 360px; display: flex; flex-direction: column;">
+                                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 25px;">
+                                    <i class="fas fa-database" style="font-size: 24px; color: #00E5FF;"></i>
+                                    <h3 style="color: #E0E0E0; font-size: 1.3em; margin: 0; font-weight: 600;">Databases</h3>
+                                </div>
+                                <div style="display: flex; flex-direction: column; gap: 18px; flex: 1;">
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <img src="img/mysql_logo.png" alt="MySQL" style="height: 24px; width: 24px; object-fit: contain;">
+                                        <span style="color: #E0E0E0; font-size: 1em;">MySQL</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <img src="img/redis_logo.png" alt="Redis" style="height: 24px; width: 24px; object-fit: contain;">
+                                        <span style="color: #E0E0E0; font-size: 1em;">Redis</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <img src="img/PostgresSql.png" alt="PostgreSQL" style="height: 24px; width: 24px; object-fit: contain;">
+                                        <span style="color: #E0E0E0; font-size: 1em;">PostgreSQL</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <img src="img/mongodb_logo.png" alt="MongoDB" style="height: 24px; width: 24px; object-fit: contain;">
+                                        <span style="color: #E0E0E0; font-size: 1em;">MongoDB</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Technologies Card -->
+                            <div style="background-color: rgba(27, 31, 56, 0.4); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 30px; transition: all 0.3s ease; min-height: 360px; display: flex; flex-direction: column;">
+                                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 25px;">
+                                    <i class="fas fa-tools" style="font-size: 24px; color: #00E5FF;"></i>
+                                    <h3 style="color: #E0E0E0; font-size: 1.3em; margin: 0; font-weight: 600;">Technologies</h3>
+                                </div>
+                                <div style="display: flex; flex-direction: column; gap: 18px; flex: 1;">
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <i class="fab fa-aws" style="font-size: 24px; color: #FF9900;"></i>
+                                        <span style="color: #E0E0E0; font-size: 1em;">AWS</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <i class="fab fa-docker" style="font-size: 24px; color: #2496ED;"></i>
+                                        <span style="color: #E0E0E0; font-size: 1em;">Docker</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <i class="fas fa-dharmachakra" style="font-size: 24px; color: #326CE5;"></i>
+                                        <span style="color: #E0E0E0; font-size: 1em;">Kubernetes</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <img src="img/openstack_logo.svg" alt="OpenStack" style="height: 24px; width: 24px; object-fit: contain;">
+                                        <span style="color: #E0E0E0; font-size: 1em;">OpenStack</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <img src="img/git_logo.png" alt="Git" style="height: 24px; width: 24px; object-fit: contain;">
+                                        <span style="color: #E0E0E0; font-size: 1em;">Git</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <img src="img/postman_logo.webp" alt="PostMan" style="height: 24px; width: 24px; object-fit: contain;">
+                                        <span style="color: #E0E0E0; font-size: 1em;">PostMan</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <img src="img/Ansible.webp" alt="Ansible" style="height: 24px; width: 24px; object-fit: contain;">
+                                        <span style="color: #E0E0E0; font-size: 1em;">Ansible</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Security Tools Card -->
+                            <div style="background-color: rgba(27, 31, 56, 0.4); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 30px; transition: all 0.3s ease; min-height: 360px; display: flex; flex-direction: column;">
+                                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 25px;">
+                                    <i class="fas fa-shield-alt" style="font-size: 24px; color: #00E5FF;"></i>
+                                    <h3 style="color: #E0E0E0; font-size: 1.3em; margin: 0; font-weight: 600;">Security Tools</h3>
+                                </div>
+                                <div style="display: flex; flex-direction: column; gap: 18px; flex: 1;">
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <i class="fas fa-shield-alt" style="font-size: 24px; color: #FFA500;"></i>
+                                        <span style="color: #E0E0E0; font-size: 1em;">Nessus</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <img src="img/splunk_logo.png" alt="Splunk" style="height: 24px; width: 24px; object-fit: contain;">
+                                        <span style="color: #E0E0E0; font-size: 1em;">Splunk</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <img src="img/nmap_logo.webp" alt="Nmap" style="height: 24px; width: 24px; object-fit: contain;">
+                                        <span style="color: #E0E0E0; font-size: 1em;">Nmap</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <img src="img/burpsuite_logo.svg" alt="Burp Suite" style="height: 24px; width: 24px; object-fit: contain;">
+                                        <span style="color: #E0E0E0; font-size: 1em;">Burp Suite</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <img src="img/metasploit_logo.webp" alt="Metasploit" style="height: 24px; width: 24px; object-fit: contain;">
+                                        <span style="color: #E0E0E0; font-size: 1em;">Metasploit</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <img src="img/wireshark_logo.png" alt="Wireshark" style="height: 24px; width: 24px; object-fit: contain;">
+                                        <span style="color: #E0E0E0; font-size: 1em;">Wireshark</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </section>
                 `,
                     portfolio: `
                     <section class="projects">
-                        <h2>📚 My Projects</h2>
+                        <h2 style="color: #A259FF; text-align: center; font-size: 2.5em; margin-bottom: 40px;">🚀 Projects & Research</h2>
+
                         <div class="project">
                             <h3>Securing OpenStack based private IaaS Cloud environment With API Gateway and Honeypot</h3>
                             <p><strong>Jan 2025 - May 2025</strong></p>
@@ -449,6 +406,16 @@
                     setTimeout(() => {
                         contentDiv.innerHTML =
                             pages[pageName] || pages["about"];
+
+                        // Update page title based on current page
+                        const pageTitles = {
+                            about: "About Me | Aman Singh",
+                            hireme: "Hire Me | Aman Singh",
+                            portfolio: "Portfolio | Aman Singh",
+                        };
+                        document.title =
+                            pageTitles[pageName] ||
+                            "Aman Singh | Cybersecurity Portfolio";
 
                         // Update active class
                         navLinks.forEach((link) => {
