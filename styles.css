@@ -1,119 +1,159 @@
-.project h3 {
-    color: #00E5FF;
-    font-size: 1.5em;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-
-.project p {
-    line-height: 1.6;
-    margin-bottom: 12px;
-}body {
-    font-family: 'Arial', sans-serif;
+/* Base Styles */
+body {
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+        Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0A0F1F;
-    color: #E0E0E0;
+    background-color: #181818;
+    color: #e0e0e0;
 }
 
+/* ========== NEW HEADER STYLES ========== */
 header {
-    background-color: #1B1F38;
-    color: #E0E0E0;
-    text-align: center;
-    padding: 20px;
+    background-color: rgba(24, 24, 24, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px 40px;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+header h1 {
+    color: #e0e0e0;
+    margin: 0 0 5px 0;
+    font-size: 2em;
+}
+
+header p {
+    color: #a0a0a0;
+    margin: 0 0 20px 0;
+    font-size: 1em;
+}
+
+/* Navigation Container */
+nav {
+    background-color: rgba(27, 31, 56, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 12px 24px;
+    border-radius: 50px;
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    margin-right: 15px;
+}
+
+/* Social Icons Container */
+.header-socials {
+    background-color: rgba(27, 31, 56, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 12px 24px;
+    border-radius: 50px;
+    display: inline-flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.header-socials a {
+    color: #e0e0e0;
+    font-size: 1.2em;
     transition: all 0.3s ease;
-    /* Prevent any unwanted movement */
-    will-change: padding, background-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.header-socials a:hover {
+    color: #00e5ff;
+    transform: translateY(-2px);
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    position: relative;
+}
+
+nav a:hover {
+    color: #00e5ff;
+}
+
+nav a:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 16px;
+    right: 16px;
+    height: 2px;
+    background-color: #00e5ff;
+    border-radius: 2px;
+}
+
+nav a.active {
+    color: #00e5ff;
+}
+
+nav a.active::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 16px;
+    right: 16px;
+    height: 2px;
+    background-color: #00e5ff;
+    border-radius: 2px;
 }
 
 /* Compact header style when scrolling */
 header.compact-header {
-    padding: 10px;
-    background-color: rgba(27, 31, 56, 0.95); /* Semi-transparent */
-    backdrop-filter: blur(10px);
+    padding: 10px 40px;
 }
 
 header.compact-header h1 {
     font-size: 1.5em;
-    margin: 0;
 }
 
 header.compact-header p {
     font-size: 0.9em;
-    margin: 5px 0;
+    margin-bottom: 15px;
 }
+/* ========== END NEW HEADER STYLES ========== */
 
-/* Add a small transition effect for smooth size change */
-header h1, header p {
-    transition: all 0.3s ease;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav a {
-    color: #A259FF !important;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s;
-}
-
-nav a.active {
-    color: #00E5FF !important;
-    font-weight: bold;
-    border-bottom: 2px solid #00E5FF;
-}
-
-nav a:visited {
-    color: #A259FF !important;  /* Force visited links to be same as normal links */
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s;
-}
-
-nav a:active {
-    color: #A259FF !important;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s;
-    background-color: transparent !important;
-    box-shadow: none !important;
-}
-
-nav a:hover {
-    color: #00E5FF !important; /* Hover color */
-}
-
+/* Original Section Styles Below */
 section {
     padding: 30px;
     margin: 30px auto;
     max-width: 850px;
-    background: #1B1F38;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    box-shadow: none;
     border-radius: 12px;
     animation: fadeIn 0.8s ease-out;
-    border: 1px solid rgba(162, 89, 255, 0.1);
+    border: none;
 }
 
 /* Alternating section backgrounds */
 section:nth-child(odd) {
-    background: #1B1F38;
+    background: transparent;
 }
 
 section:nth-child(even) {
-    background: #232845;
+    background: transparent;
 }
 
 /* Improved headings */
 section h2 {
-    color: #A259FF;
+    color: #a259ff;
     font-size: 2.2em;
     margin-bottom: 20px;
     font-weight: bold;
@@ -122,30 +162,30 @@ section h2 {
 }
 
 section h2:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -10px;
     left: 0;
     width: 60px;
     height: 3px;
-    background: linear-gradient(to right, #A259FF, #00E5FF);
+    background: linear-gradient(to right, #a259ff, #00e5ff);
     border-radius: 3px;
 }
 
 /* Fade-in animation */
 @keyframes fadeIn {
-    from { 
+    from {
         opacity: 0;
         transform: translateY(20px);
     }
-    to { 
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
 h2 {
-    color: #A259FF;
+    color: #a259ff;
     font-size: 2.2em;
     font-weight: bold;
     margin-bottom: 20px;
@@ -156,9 +196,9 @@ h2 {
     align-items: center;
     gap: 30px;
     padding: 40px;
-    background-color: #1B1F38;
+    background-color: transparent;
     border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: none;
 }
 
 #about img {
@@ -169,30 +209,46 @@ h2 {
 }
 
 #about h2 {
-    color: #A259FF;
+    color: #a259ff;
     font-size: 2em;
 }
 
 #about p {
-    color: #E0E0E0;
+    color: #e0e0e0;
     font-size: 1.1em;
     line-height: 1.6;
 }
 
 .project {
-    border-left: 4px solid #A259FF;
+    border-left: 4px solid #a259ff;
     padding: 15px 15px 15px 20px;
     margin-bottom: 25px;
-    background: #232845;
+    background: transparent;
     border-radius: 8px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .project:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    border-left: 4px solid #00E5FF;
+    border-left: 4px solid #00e5ff;
+    background: rgba(42, 42, 42, 0.3);
+}
+
+.project h3 {
+    color: #00e5ff;
+    font-size: 1.5em;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.project p {
+    line-height: 1.6;
+    margin-bottom: 12px;
 }
 
 .project-btn {
@@ -201,7 +257,7 @@ h2 {
     font-size: 1.1em;
     font-weight: bold;
     color: white;
-    background: linear-gradient(45deg, #A259FF, #00C2FF);
+    background: linear-gradient(45deg, #a259ff, #00c2ff);
     border-radius: 8px;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
@@ -210,14 +266,14 @@ h2 {
 
 .project-btn:hover {
     transform: scale(1.05);
-    background: linear-gradient(45deg, #00C2FF, #A259FF);
+    background: linear-gradient(45deg, #00c2ff, #a259ff);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 .credential-button {
-    color: #E0E0E0;
+    color: #e0e0e0;
     text-decoration: none;
-    background-color: #A259FF;
+    background-color: #a259ff;
     padding: 10px 18px;
     border-radius: 8px;
     font-size: 1em;
@@ -228,10 +284,10 @@ h2 {
 }
 
 .credential-button:hover {
-    background: linear-gradient(to right, #6C9EFF, #A259FF);
+    background: linear-gradient(to right, #6c9eff, #a259ff);
     color: white;
-    transform: scale(1.05); /* Slight zoom */
-    box-shadow: 0px 0px 15px rgba(162, 89, 255, 0.5); /* Glow effect */
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(162, 89, 255, 0.5);
 }
 
 .contact-button {
@@ -240,44 +296,46 @@ h2 {
     gap: 10px;
     padding: 12px 24px;
     font-size: 1.2em;
-    color: #6C9EFF;
+    color: #6c9eff;
     border: 2px solid;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    border-image: linear-gradient(to right, #6C9EFF, #A259FF) 1;
+    border-image: linear-gradient(to right, #6c9eff, #a259ff) 1;
     background: transparent;
     position: relative;
     overflow: hidden;
 }
 
-/* Hover Effect: Gradient Fill + Glow */
 .contact-button:hover {
-    background: linear-gradient(to right, #6C9EFF, #A259FF);
+    background: linear-gradient(to right, #6c9eff, #a259ff);
     color: white;
-    transform: scale(1.05); /* Slight zoom */
-    box-shadow: 0px 0px 15px rgba(162, 89, 255, 0.5); /* Glow effect */
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(162, 89, 255, 0.5);
 }
 
 .projects {
     padding: 30px;
     margin: 30px auto;
     max-width: 850px;
-    background: #232845;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    box-shadow: none;
     border-radius: 12px;
-    border: 1px solid rgba(162, 89, 255, 0.1);
-}
-
-* {
-    -webkit-tap-highlight-color: transparent !important;
+    border: none;
 }
 
 /* Main content */
 #content {
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
     padding: 0 15px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* Remove tap highlight */
+* {
+    -webkit-tap-highlight-color: transparent !important;
 }
 
 *:focus {
@@ -286,7 +344,8 @@ h2 {
     -webkit-tap-highlight-color: transparent !important;
 }
 
-a:focus, button:focus {
+a:focus,
+button:focus {
     outline: none !important;
     box-shadow: none !important;
     background: transparent !important;
@@ -309,17 +368,15 @@ div:focus {
     box-shadow: none !important;
 }
 
-/* Add these styles to your existing CSS */
-
 /* Skills grid layout */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 20px;
     padding: 20px;
-    background-color: #1B1F38;
+    background-color: transparent;
     border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: none;
 }
 
 .skill-item {
@@ -327,23 +384,25 @@ div:focus {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #232845;
+    background: transparent;
     padding: 20px;
     border-radius: 10px;
     transition: all 0.3s ease;
     height: 120px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .skill-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(145deg, #232845, #2A3154);
+    background: rgba(42, 42, 42, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .skill-filter {
-    background: #1B1F38;
+    background: transparent;
     color: white;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 10px 20px;
     border-radius: 25px;
     font-weight: bold;
@@ -352,47 +411,19 @@ div:focus {
 }
 
 .skill-filter:hover {
-    background: linear-gradient(45deg, #A259FF, #00C2FF) !important;
+    background: linear-gradient(45deg, #a259ff, #00c2ff) !important;
     transform: translateY(-2px);
 }
 
 .skill-filter.active {
-    background: linear-gradient(45deg, #A259FF, #00C2FF) !important;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .skills-grid {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    }
-    
-    .skill-filter {
-        padding: 8px 16px;
-        font-size: 0.9em;
-    }
-}
-
-@media (max-width: 480px) {
-    .skills-grid {
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-        gap: 15px;
-    }
-    
-    .skill-item {
-        padding: 15px;
-        height: 100px;
-    }
-    
-    .skill-item i, 
-    .skill-item span:first-child {
-        font-size: 40px !important;
-    }
+    background: linear-gradient(45deg, #a259ff, #00c2ff) !important;
 }
 
 .flex-col:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(145deg, #232845, #2A3154);
+    background: rgba(42, 42, 42, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* For Kubernetes icon */
@@ -408,6 +439,87 @@ div[style*="width: 160px; height: 160px;"] {
 div[style*="width: 160px; height: 160px;"]:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-    background: linear-gradient(145deg, #1B1F38, #2A3154);
-    border: 1px solid rgba(162, 89, 255, 0.2);
+    background: rgba(42, 42, 42, 0.3) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    header {
+        padding: 20px;
+    }
+
+    nav a {
+        font-size: 0.95em;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .header-socials {
+        margin-top: 10px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    .skill-filter {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 0.85em;
+    }
+
+    nav a {
+        font-size: 0.85em;
+        padding: 6px 10px;
+    }
+
+    .header-socials {
+        gap: 12px;
+        padding: 10px 16px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        gap: 15px;
+    }
+
+    .skill-item {
+        padding: 15px;
+        height: 100px;
+    }
+
+    .skill-item i,
+    .skill-item span:first-child {
+        font-size: 40px !important;
+    }
 }
